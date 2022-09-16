@@ -1,7 +1,6 @@
-<div> <img src="https://global-uploads.webflow.com/61d83a2ebb0ae01ab96e841a/630d2251fd7c6c8ef1d1df14_OG-nlw-esports.jpg" height=450px width=100%> </div>
-
-<div align="center">
-    NLW - Next Level Week eSports 👨‍💻
+<div align="center", style="font-size: 1.5rem">
+    <img src="https://global-uploads.webflow.com/61d83a2ebb0ae01ab96e841a/630d2251fd7c6c8ef1d1df14_OG-nlw-esports.jpg" width=50%>
+    <p>NLW - Next Level Week eSports 👨‍💻</p>
 </div>
 <br>
 <br>
@@ -27,5 +26,16 @@
         <li>Sintaxe de uma tag: &lttag&gtconteudo&lt/tag&gt </li>
         <li>Sintaxe de um atributo: &lttag atributo=""&gtconteudo&lt/tag&gt</li>
         <li>&lt--comentário--&gt</li>
+    </ul>
+</div>
+
+<h1>• Day 3 - To be continued</h1>
+<div id="day3">
+    <p><b>CSS - Cascading Style Sheets</b></p>
+    <ul>
+        <li>Serve para estilizar o HTML</li>
+        <li>Declaração: código que irá falar as propriedades a serem aplicadas num elemento</li>
+        <li>Sintaxe: seletor { <br>propriedade: valor; <br>}</li>
+        <li>Especificidade: cada seletor possui um "peso", sendo a soma deles levada em conta para determinar a propriedade de maneira mais específica</li>
     </ul>
 </div>
