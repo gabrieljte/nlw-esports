@@ -49,10 +49,12 @@ table {
 
 /* style below and css reset above */
 
-* {
+body * {
+    box-sizing: border-box;
     font-family: Inter, sans-serif;
     color: white;
     line-height: 150%;
+    letter-spacing: 160%;
 }
 
 body { 
@@ -62,18 +64,89 @@ body {
     background-color: #121214 ;
 }
 
-main * { /*afeta todos que estão dentro da tag main*/
-    border: 1px solid red;
+/* header/main - style */
+
+header {
+    padding-top: 32px;
+    text-align: center;
+}
+
+header img {
+    border-radius: 50%;
+    width: 100%; /*100% em relação ao header div*/
+}
+
+header div {
+    background: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    width: 120px;
+    margin: auto; /*alinhar no meio*/
+    padding: 4px;
+    display: flex;
+    border-radius: 50%;
+    transition: transform .3s;
+}
+
+header div:hover {
+    transform: scale(1.1);
 }
 
 main {
     max-width: 580px;
     width: 90%;
-    margin: auto;
+    margin: 32px auto;
+    display: flex; /*ou display: grid -- estudar depois grid, pq sou preguiçoso e fico procrastinando pra ver isso*/
+    gap: 24px;
+    flex-direction: column;
+}
+
+/* sections - style */
+
+section {
+    background: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 8px;
+}
+
+section div {
+    background-color: #2A2634;
+    border-radius: 8px;
+    padding: 32px;
+    padding-top: 24px;
 }
 
 section h2 {
-    font-weight: 900;
-    font-size: 24px;
     letter-spacing: -0.5px;
+}
+
+section p {
+    letter-spacing: -0.2px;
+    color: #A1A1AA;
+}
+
+/* listas - style */
+
+section ul {
+    display: flex; /*altera o display dos elementos dentro da caixa*/
+    gap: 16px; /*diferença/espaço entre os flex-items*/
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+section li {
+    transition: transform 0.3s;
+}
+
+section li:hover {
+    transform: scale(1.1);
+}
+
+
+.game-list img{
+    width: 100px;
+    border-radius: 8px;
+}
+
+.channel-list img {
+    border-radius: 50%;
+    width: 80px;
 }
